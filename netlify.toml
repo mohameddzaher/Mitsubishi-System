@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+# The @netlify/plugin-nextjs is auto-installed by Netlify when a Next.js app
+# is detected; no need to list it here. Server actions, route handlers, and
+# server components run on Netlify Functions (Node runtime) — argon2 works.
